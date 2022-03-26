@@ -9,13 +9,14 @@ import time
 # Menjalankan Web Browser
 browser  = webdriver.Chrome(ChromeDriverManager().install())
 
+#Ganti Web Lu
 
 browser.get('https://hybrid.uniku.ac.id/login/index.php')
 
 # Ganti Email dan Pw Lu
 
-email = "20210910002@uniku.ac.id"
-pw = "ayang166#"
+email = "email@uniku.ac.id"
+pw = "sandi1234#"
 
 browser.find_element_by_css_selector('#mm-0 > div.wrapper > section.our-log.bgc-fa > div > div > div > div > div.potentialidplist').click();
 browser.find_element_by_xpath('//*[@id="identifierId"]').send_keys(email)
